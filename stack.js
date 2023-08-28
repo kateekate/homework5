@@ -30,6 +30,7 @@ class Stack {
     }
 
     const node = new Node(element, this.#head);
+
     this.#head = node;
     this.#length++;
   }
@@ -40,6 +41,7 @@ class Stack {
     }
 
     const topElement = this.#head.element;
+
     this.#head = this.#head.nextNode;
     this.#length--;
 
